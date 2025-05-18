@@ -291,3 +291,20 @@ footer {
 i:hover {
   transform: scale(1.05);
 }
+.play-triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgba(255, 255, 255, 0.7); /* semi-transparent white */
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.work-item:hover .play-triangle {
+    border-left-color: rgba(255, 255, 255, 0.9); /* lighter on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* optional slight grow effect */
+}
